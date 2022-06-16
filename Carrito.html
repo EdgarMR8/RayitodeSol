@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis pedidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logos/LogoRDS.jpeg">
+    
+    
+</head>
+<body class="bg-light">
+         <!-- MENU -->
+         <div class="b-example-divider"></div>
+
+         <header class="py-3 mb-3 border-bottom bg-dark">
+           <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="inicio.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="manualidades.html" class="nav-link px-2 text-secondary">Manualidades</a></li>
+              <li><a href="cjasarr.html" class="nav-link px-2 text-secondary">Cajas</a></li>
+              <li><a href="Decoracion.html" class="nav-link px-2 text-secondary">Decoraciones</a></li>
+            </ul>
+       
+             <div class="d-flex align-items-center">
+               <form class="w-100 me-3" role="search">
+                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+               </form>
+       
+               <div class="flex-shrink-0 dropdown">
+                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                   <img src="img/logos/LogoRDS.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
+                 </a>
+                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                   <li><a class="dropdown-item" href="Carrito.html">Mi carrito</a></li>
+                   <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" onclick="cerrarSesion()">Salir</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </header>
+  
+
+    
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="img/logos/LogoRDS.jpeg" alt="" width="72" height="57">
+        <h2>Y los billetes viejo???</h2>
+        <p class="lead">Llego el mejor momento :3.</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Mi carrito</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Ramo de sabritas</h6>
+                <small class="text-muted">Ramo de sabritas</small>
+              </div>
+              <span class="text-muted">$230</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Combo box</h6>
+                <small class="text-muted">Caja de regalo con flores</small>
+              </div>
+              <span class="text-muted">$380</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Mesa de dulces</h6>
+                <small class="text-muted">Mesa de dulces para baby shower</small>
+              </div>
+              <span class="text-muted">$2300</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>Ella perrea sola</small>
+              </div>
+              <span class="text-success">−$180</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (MXM)</span>
+              <strong>$2730</strong>
+            </li>
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="btn btn-secondary">Codigo</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Direccion de envio</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nombre requirido.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nombre requirido.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback">
+                    Nombre de usuario requerido.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Elpepe@example.com">
+                <div class="invalid-feedback">
+                  Ingrese un correo valido.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="address" placeholder="CabadaYork #11" required>
+                <div class="invalid-feedback">
+                  Porfavor ingrese una direccion.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label">Referencia<span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="A lado de la casa de bad bunny">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Pais</label>
+                <select class="form-select" id="country" required>
+                  <option value="0" selected disabled> DEFAULT </option>
+                  <option value="1"> MEXICO </option>
+                  <option value="2"> ESTADOS UNIDOS </option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecciona un pais.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">Estado</label>
+                <select class="form-select" id="state" required>
+                  <option value="0" selected disabled> DEFAULT </option>
+                  <option>Mexico city</option>
+                  <option>Veracruz</option>
+                  <option>Xalapa</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecciona un estado.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Celular</label>
+                <input type="number" class="form-control"  placeholder="" required>
+                <div class="invalid-feedback">
+                  Ingresa un Numero de contacto.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi dirección de facturación</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Guarda esta información para la próxima vez</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">Pago</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Tarjeta de credito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Tarjeta de debito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nombre del dueño tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+               
+                <div class="invalid-feedback">
+                  Nombre requerido. 
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Numero de la tarjeta</label>
+                <input type="number" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Numerod e la tarjeta requerido.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Expirasion</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Fecha de expiracion requerida.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="number" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Codigo de seguridad requerido.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Toma todo mi dinero :v</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  
+    
+  </div>
+
+
+
+
+
+  
+   <!-- FOOTER -->
+   <footer class="container">
+    <p class="float-end"><a href="inicio.html">Back to top</a></p>
+    <p>&copy; 2021–2022 RDS Company, Inc.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="form-validation.js"></script>
+
+  <script>
+
+    function cerrarSesion() {
+      sessionStorage.clear();
+      window.location = "inicio.html";
+    }
+  </script>
+</body>
+</html>
